@@ -23,15 +23,15 @@
         }
 
         usort($messages, "cmp");
-        $i=0;
+        
         foreach ($messages as $message) {
-            if ($i===2) break;
+           
             $user = "me";
             if ($message->user_id == $thread->thread->users[0]->pk){
                 $user = $thread->thread->users[0]->username;
             }
             print($user . ": " . $message->text."\n<br><br>");
-            $i++;
+            
         }
 
     } catch (\Exception $e) {

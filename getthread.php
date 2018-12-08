@@ -10,8 +10,8 @@ if (defined('STDIN')) {
 
 
 /////// CONFIG ///////
-$username = '_szluis';
-$password = '*/*14iGram31*/*';
+$username = '';
+$password = '';
 $debug = true;
 $truncatedDebug = false;
 //////////////////////
