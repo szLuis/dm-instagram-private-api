@@ -2,11 +2,10 @@
 
 
     try {
-        // $thread_id = $_GET['thread_id'];
-        // exec("php getthread.php $thread_id 2>&1" , $output, $return);
-        // var_dump($output);
+        $thread_id = $_GET['thread_id'];
+        exec("php getthread.php $thread_id 2>&1" , $output, $return);
+        var_dump($output);
 
-        // exit();
         
         $threadJSON = file_get_contents("thread.json");
         $thread = json_decode($threadJSON);
